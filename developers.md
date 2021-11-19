@@ -194,6 +194,8 @@ We will now try to define our entry maker for our example by providing an
 `entry_maker` to `finders.new_table` and changing our table to be a little bit
 more interesting. We will end up with the following new code for `finders.new_table`:
 
+TODO: Explain more about entry_index when that's finalized.
+
 ```lua
     finder = finders.new_table {
       results = {
@@ -238,7 +240,7 @@ to be more complex with icons and special indicators but `ordinal` could be a si
 sorting key.
 
 There are other important keys which can be set but do not make sense in the
-current context as we are not dealing wiht files:
+current context as we are not dealing with files:
 - `path`: to set the absolute path of the file to make sure its always found
 - `lnum`: to specify a line number in the file. This will allow the
   `conf.grep_previewer` to show that line and the default action to jump to
